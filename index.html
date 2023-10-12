@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Spotify - Your favourite music is here</title>
+        <link rel="stylesheet" href="style.css">
+        </head>
+<body>
+    <nav>
+        <ul class="ul">
+            <li class="brand"><img src="m_logo.png" alt="Spotify"> auDio-spin</li>
+            <li class="home">Home</li>
+            <li class="home">About</li>
+            <li class="home">Gallery</li>
+            <li class="home">Contact</li>
+            
+        
+            <div class="navtop">
+                <input class="search-box" type="text" placeholder="Search..."> 
+                
+            </div>
+            <li class="login-link">LOGIN</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="songList">
+            <h1 class="songi">Ak's playlist</h1>
+            <div class="songItemContainer">
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName" id="boond">Ankit Tiwari - Boond Boond</span>
+                    <span class="songlistplay"><span class="timestamp">05:21 <i id="0" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="2">
+                    <span class="songName" id="katra">Ankit Tiwari & Prakriti Kakar-Katra Katra</span>
+                    <span class="songlistplay"><span class="timestamp">06:21 <i id="1" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="3">
+                    <span class="songName" id="dhoondne">Arijit Singh - Main Dhoondne Ko Zamaane Mein</span>
+                    <span class="songlistplay"><span class="timestamp">04:23 <i id="2" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="4">
+                    <span class="songName" id="raabta">Arijit Singh - Raabta</span>
+                    <span class="songlistplay"><span class="timestamp">04:04 <i id="3" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="5">
+                    <span class="songName" id="sanam">Arijit Singh - Sanam Re</span>
+                    <span class="songlistplay"><span class="timestamp">05:05 <i id="4" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="6">
+                    <span class="songName" id="jabtak">Armaan Malik - Jab Tak</span>
+                    <span class="songlistplay"><span class="timestamp">02:54 <i id="5" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="7">
+                    <span class="songName" id="kaun">Armaan Malik - Kaun Tujhe</span>
+                    <span class="songlistplay"><span class="timestamp">02:39 <i id="6" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="8">
+                    <span class="songName" id="dil">Atif Aslam - Dil Diyan Gallan</span>
+                    <span class="songlistplay"><span class="timestamp">04:16 <i id="7" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="9">
+                    <span class="songName" id="lamhe">Atif Aslam - Woh Lamhe</span>
+                    <span class="songlistplay"><span class="timestamp">04:44 <i id="8" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="10">
+                    <span class="songName" id="zikr">Darshan Raval - Tera Zikr</span>
+                    <span class="songlistplay"><span class="timestamp">03:28 <i id="9" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+            </div>
+        </div>
+        <div class="songBanner"></div>
+    </div>
+
+    <div class="bottom">
+        <input style="color: tomato;" type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+        <p id="demo"> time</p>
+        <div class="icons">
+            <!-- fontawesome icons -->
+            <i class="fas fa-3x fa-step-backward" id="previous"></i>
+            <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
+            <i class="fas fa-3x fa-step-forward" id="next"></i> 
+        </div>
+        <div class="songInfo">
+            <img src="playing.gif" width="42px" alt="" id="gif"> <span id="masterSongName">Boond Boond</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
+</body>
+</html>

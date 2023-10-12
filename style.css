@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+body{
+    background-color: antiquewhite;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color: white;
+}
+
+.home{
+    --c:linear-gradient(#e49e9e 0 0); /* update the color here */
+    
+    padding-bottom: .2em;
+    background: var(--c), var(--c);
+    background-size: .0em .3em;
+    background-position:25% 100%;
+    background-repeat: no-repeat;
+    transition: .3s linear, background-size .3s .2s linear;
+  }
+.home:hover {
+    background-size: 38% .1em;
+    background-position: 5% 100%, 95% 100%;
+  }
+  
+nav ul li{
+    padding: 0 12px;
+}
+.brand img{
+    width: 44px;
+    padding: 0 8px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.nav-top{
+    align-items: flex-end;
+    padding-bottom: 100px;
+}
+
+.login-link{
+
+    padding-bottom: -5px;
+    border: 2px solid #9cb8d6;
+    background-color: #5b9ddf;
+    border-radius: 2px;
+    margin-left: 30px;
+    cursor: pointer;;
+}
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    margin-right: 20px;
+}
+.search-box{
+    border: none;
+    border-bottom: 1px solid #aaa;
+    background: transparent;
+    outline: none;
+    height: 30px;
+    color: #fff;
+    width: 180px;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.5s;
+    align-items: center;
+    margin-left: 450px;
+    margin-bottom: 10px;
+    
+}
+
+.navtop{
+    justify-content: space-between;
+    display: flexbox;
+}
+.search-box:focus{
+    width: 280px;
+    border-color: #1f80e0;
+}
+/* .login-link:focus{
+    border-radius: 2px;
+} */
+
+/* .home{
+    cursor: pointer;
+    padding-left: 30px;
+
+    box-shadow:
+     /* 0 5px 0 #E8476A, */
+    /* 0 4px 0 purple;
+  background: black;
+  transform-origin: bottom right;
+  transition: transform 0.5s ease-out;
+    
+} */
+/* .home:after{
+
+content: '';
+position: absolute;
+width: 100%;
+height: 5px;
+bottom: -10px;
+left: -4px;
+transform: scaleX(0);
+box-shadow:
+   0 5px 0 #E8476A,
+  0 10px 0 purple;
+background: #FFA01B ;
+transform-origin: bottom right;
+transition: transform 0.5s ease-out;
+}
+.home:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }  */
+.about{
+    cursor: pointer;
+}
+
+.gallery{
+    cursor: pointer;
+}
+
+.contact{
+    cursor: pointer;
+}
+
+.login{
+    cursor: pointer;
+}
+
+.container{
+    min-height: 72vh;
+    background-color: black;
+    color: white;
+   font-family: 'Varela Round', sans-serif;
+   display: flex;
+   margin: 23px auto;
+   width: 70%;
+   border-radius: 12px;
+   padding: 34px;
+   background-image: url('music1.jpg');
+   backdrop-filter: blur(2px);
+}
+
+.bottom{
+    position: sticky;
+    bottom: 0;
+    height: 130px;
+    background-image: url(https://www.bing.com/images/search?view=detailV2&ccid=qjv4k38l&id=027307B6E16B1AB23C38207F8B458E84DCB07066&thid=OIP.qjv4k38lLZGpHr5DVY8CkAHaEK&mediaurl=https%3a%2f%2fbrownmilitary.weebly.com%2fuploads%2f1%2f2%2f5%2f0%2f125093549%2f230643763.jpg&exph=1080&expw=1920&q=download+background+for+music+app&simid=608015224720871037&FORM=IRPRST&ck=0CAAB51C0AE936582E7FBB3962431BB7&selectedIndex=71&ajaxhist=0&ajaxserp=0);
+    color:rgb(66, 85, 150);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.home{
+    text-decoration: none;
+    padding-left: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+li:after{
+    content: "";
+    position: absolute;
+    /* background-color: red; */
+    height: 3px;
+    width: 3%;
+    bottom: -1px;
+}
+.songi:hover{
+    transform: scale(1.1);
+}
+.songi:hover::after{
+    transform: scale(1.1);
+}
+
+
+.icons{
+    margin-top: 14px; 
+}
+.icons i{
+    cursor: pointer;
+}
+
+#myProgressBar{
+    width: 80vw; 
+    cursor: pointer;
+    transition: 0.2s;
+    color: red;
+}
+
+.songItemContainer{
+    margin-top: 74px;
+}
+
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: rgb(184, 227, 239);
+    
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+    visibility: visible;
+    transition-delay: 350ms;
+    cursor: pointer;
+  will-change: transform;
+    /* width: var(--s);
+  aspect-ratio: 1;
+  outline: calc(var(--s)/2) solid #0009;
+  outline-offset: calc(var(--s)/-2);
+  cursor: pointer;
+  transition: .3s; */
+}
+/* #demo{
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+}
+.dem{
+    margin-left: 20px;
+    align-items: center;
+    display: flex;
+} */
+#demo{
+    font-weight: 700;
+    font-style: normal;
+    font-size: large;
+}
+.songItem span::after{
+    transition: 2s;
+}
+
+.songItem span:hover{
+    transform: scale(1.2);
+}
+
+.brand:hover img{
+    transform: scale(1.2);
+}
+
+
+.songItem span:hover{
+    cursor: pointer;
+
+}
+
+.songItem img{
+    width: 43px;
+    margin: 0 23px;
+    border-radius: 34px;
+}
+
+.timestamp{
+    margin: 0 23px;
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    font-family: 'Varela Round', sans-serif;
+
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+
+}
+#masterSongName{
+    font-size:20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    color: #e49e9e;
+}
+
+@media only screen and (max-width: 1100px) {
+    body {
+      background-color: red;
+    }
+  }
